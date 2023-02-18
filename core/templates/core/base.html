@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %} {% endblock %}
+  </head>
+  <style>
+    .main-nav {
+      width: 50%;
+      height: 50px;
+      display: inline-block;
+      margin-right: 10px; /* establece un margen de 10px a la derecha para separar los elementos */
+    }
+
+    .nav-list {
+      list-style: none; /* quita los puntos/bolitas de la lista */
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-list li {
+      display: inline-block; /* muestra los elementos de la lista en línea horizontal */
+    }
+  </style>
+  <body>
+    <main>
+      <!--Cabecera y menú-->
+      <h1>Mi web personal</h1>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/biography">Biography</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/education">Education</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!--Contenido-->
+
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
