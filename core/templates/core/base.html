@@ -31,11 +31,11 @@
 
       <nav class="main-nav">
         <ul class="nav-list">
-          <li><a href="/">Home</a></li>
+          <li><a href="{% url 'home' %}">Portada</a></li>
           <li><a href="/biography">Biography</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
           <li><a href="/education">Education</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </nav>
 
